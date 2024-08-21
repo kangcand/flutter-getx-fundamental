@@ -5,6 +5,7 @@ import '../controllers/register_controller.dart';
 class RegisterView extends GetView<RegisterController> {
   @override
   Widget build(BuildContext context) {
+    // RegisterController c = Get.put(RegisterController());
     return Scaffold(
       appBar: AppBar(title: Text('Register')),
       body: Padding(

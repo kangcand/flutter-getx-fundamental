@@ -25,15 +25,17 @@ class AppPages {
 
   static final routes = [
     GetPage(
-        name: _Paths.HOME,
-        page: () => const HomeView(),
-        binding: HomeBinding(),
-        middlewares: [AuthMiddleware()]),
+      name: _Paths.HOME,
+      page: () => const HomeView(),
+      binding: HomeBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
     GetPage(
-        name: _Paths.COUNTER,
-        page: () => const CounterView(),
-        binding: CounterBinding(),
-        middlewares: [AuthMiddleware()]),
+      name: _Paths.COUNTER,
+      page: () => const CounterView(),
+      binding: CounterBinding(),
+      middlewares: [AuthMiddleware()],
+    ),
     GetPage(
       name: _Paths.BIODATA,
       page: () => const BiodataView(),
