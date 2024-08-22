@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../biodata/views/biodata_view.dart';
 import '../../counter/views/counter_view.dart';
 import '../../home/views/home_view.dart';
+import '../../kategori/views/kategori_view.dart';
 import '../../profile/views/profile_view.dart';
 import '../controllers/bottom_menu_controller.dart';
 
@@ -13,6 +14,7 @@ class BottomMenuView extends GetView<BottomMenuController> {
   final List<Widget> pages = [
     HomeView(),
     CounterView(),
+    KategoriView(),
     BiodataView(),
     ProfileView(),
   ];
@@ -25,6 +27,7 @@ class BottomMenuView extends GetView<BottomMenuController> {
         items: const [
           TabItem(icon: Icons.home, title: 'Home'),
           TabItem(icon: Icons.exposure, title: 'Counter'),
+          TabItem(icon: Icons.category, title: 'Kategori'),
           TabItem(icon: Icons.person, title: 'Biodata'),
           TabItem(icon: Icons.account_circle, title: 'Profile'),
         ],
